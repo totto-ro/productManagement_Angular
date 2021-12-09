@@ -1,0 +1,21 @@
+<main>
+    <div class="error">
+        {{errorMessage}}
+    </div>
+    <div>
+        <h2>Edit this product:</h2>
+        <!-- <p>{{currentProduct | json}}</p> -->
+        <form (submit)="editProduct($event)">
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" [(ngModel)]="currentProduct.title" placeholder="{{currentProduct['title']}}">
+            <label for="price">Price:</label>
+            <input type="number" name="price" id="price" [(ngModel)]="currentProduct.price" placeholder="{{currentProduct.price}}">
+            <label for="image">Image url:</label>
+            <input type="text" name="image" id="image" [(ngModel)]="currentProduct.image" placeholder="{{currentProduct.image}}">
+            <div class="buttomsGroup"> 
+                <button class="button" type="submit">Submit</button>
+            </div>
+        </form>
+        <button class="button" [routerLink] = "['/products']">Cancel</button> 
+    </div>
+</main>

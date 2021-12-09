@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+h1{
+    margin-bottom: 50px;
+    font-size: 100px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+table{
+    width: 1340px;
+}
+
+thead > tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 30px;
+    margin: 0;
+    border-bottom: 5px solid black;
+}
+
+.b6{
+    flex: 1;
+    margin-top: 70px;
+}
+
+.b6 > a{
+    margin-left: 10px;
+}
+
+.b1{
+    width: 100px;
+    text-align: center;
+    margin-left: 10px;
+    flex: 1;
+}
+
+
+
+tbody{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin-top: 20px;
+}
+
+
+tbody > tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+th{
+    text-align: center;
+    
+    flex: 1;
+}
+
+.button{
+    font-size: 20px;
+    padding: 5px;
+    background-color:lightseagreen;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button > a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.button:hover{
+    cursor: pointer;
+    background-color:lightskyblue;
+    color: white;
+}
+
+caption{
+    margin: 30px;
+    font-size: 40px;
+}
+
+nav{
+    margin-left: 1000px;
+}
+
+nav > p > a{
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+section{
+    overflow: auto;
+    height: 1500px;
+}

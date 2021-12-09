@@ -1,0 +1,33 @@
+<main>
+    <section>
+        <table>
+            <caption>Product List:</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Foto</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let element of allProducts">
+                    <td class="b1"  >
+                        <img style="width: 250px;" src="{{element.image}}" alt="product image">
+                    </td>
+                    <td class="b6"  >
+                        {{ element.title }}
+                    </td>
+                    <td class="b6"  >
+                        ${{ element.price }}
+                    </td>
+                    <td class="b6">
+                        <button class="button" [routerLink] = "['/products/edit', element.id]"  >Edit</button>
+                        <button  class="button" (click) = "destroyProduct(element.id)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+

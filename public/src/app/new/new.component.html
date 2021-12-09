@@ -1,0 +1,20 @@
+<main>
+    <div class="error">
+        {{errorMessage}}
+    </div>
+    <div>
+        <h2>Create a New Product:</h2>
+        <form (submit)="createProduct($event)">
+            <label for="title">Name:</label>
+            <input type="text" name="title" id="title" [(ngModel)]="newProduct.title" >
+            <label for="price">Price:</label>
+            <input type="number" name="price" id="price" [(ngModel)]="newProduct.price" >
+            <label for="image">Image url:</label>
+            <input type="text" name="image" id="image" [(ngModel)]="newProduct.image" >
+            <div class="buttomsGroup"> 
+                <button class="button" [routerLink] = "['/products']">Cancel</button> 
+                <button class="button" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</main>
