@@ -1,12 +1,10 @@
-# Authors
+# Project Product Management
 Objectives:
 
-Create a full CRUD app with Angular, Express, Node, and MongoDB
+1. Create a full CRUD app with Angular, Express, Node, and MongoDB
 
-Include backend validations
+2. Use nested routing
 
-Create an application where users submit their favorite authors. List all the authors on the first page. From there, the user may click on a button to edit or delete each author.
+3. Include backend validations
 
-The edit form must be pre-populated with the existing data for the author.
-
-Use backend validations to ensure that all author names and quotes are at least three characters long. If the user does not pass validations, display an error message. Validations must also be applied when editing an author.
+Build a product manager app in which a user may view a home page, the product list page, product creation page (with validations), and product edit page (with validations). 
